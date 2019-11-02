@@ -70,7 +70,7 @@ def picture(filename):
     return text
 #text function
 def txt(text):
-    t = open(text,'r')
+    t = open(text,'r',encoding="utf-8", errors='ignore')
     jn = t.read()
     return jn
 def docu(filename):
