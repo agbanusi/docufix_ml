@@ -14,7 +14,7 @@ from fuzzywuzzy import fuzz
 from gingerit.gingerit import GingerIt
 from flask import Flask, request,render_template
 from werkzeug.utils import secure_filename
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg','bmp','pdf','svg','epub','docx'])
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg','bmp','pdf','svg','epub','docx','txt'])
 app = Flask(__name__)
 UPLOAD_FOLDER = './templates'
 app.config['UPLOAD_FOLDER']=UPLOAD_FOLDER
