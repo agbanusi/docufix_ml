@@ -52,6 +52,8 @@ def upload_page():
                     c= docu(os.path.join(app.config['UPLOAD_FOLDER'], fname))
                 elif file.filename.rsplit('.',1)[1].lower() in ext4:
                    c = txt(os.path.join(app.config['UPLOAD_FOLDER'], fname))
+                else:
+                    c = ''
             except IndexError:
                 c= txt(os.path.join(app.config['UPLOAD_FOLDER'], fname))
           
