@@ -182,9 +182,9 @@ def sim(c):
     az = max(cc)
   except ValueError:
       az = 0
-  if az>=65:
+  if az>=60:
         pp = 'Warning! Plagiarised texts detected'
-  elif az>0 and az<65:
+  elif az>0 and az<60:
         pp = 'No much Plagiarised texts found'
   else:
         pp = 'Error: something went wrong!'
